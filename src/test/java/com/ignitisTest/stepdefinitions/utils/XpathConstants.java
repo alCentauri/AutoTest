@@ -1,4 +1,4 @@
-package com.ignitisTest.stepdefinitions;
+package com.ignitisTest.stepdefinitions.utils;
 public class XpathConstants {
     public static final String COMPANY_INPUT = "//input[@aria-label='company']";
     public static final String COMPANY_CODE_INPUT = "//input[@aria-label='company_code']";
