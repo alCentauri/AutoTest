@@ -1,5 +1,5 @@
 package com.ignitisTest.stepdefinitions;
-import com.ignitisTest.stepdefinitions.utils.TestUtils;
+import com.ignitisTest.stepdefinitions.utils.Scrolling;
 import com.ignitisTest.stepdefinitions.utils.XpathConstants;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
@@ -21,7 +21,7 @@ public class MainPageEn {
     }
     public void findAndClickTheArticle(String articleName) {
         String articleXpath = "//h3[text()='" + articleName + "']";
-        Optional<WebElement> articleElement = TestUtils.findElementInPage(driver, articleXpath);
+        Optional<WebElement> articleElement = Scrolling.findElementInPage(driver, articleXpath);
         articleElement.ifPresent(WebElement::click);
     }
 }

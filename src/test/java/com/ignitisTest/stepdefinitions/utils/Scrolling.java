@@ -1,7 +1,7 @@
 package com.ignitisTest.stepdefinitions.utils;
 import org.openqa.selenium.*;
 import java.util.Optional;
-public class TestUtils {
+public class Scrolling {
     public static Optional<WebElement> findElementInPage(WebDriver driver, String elementXpath) {
         WebElement elementToFind;
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;

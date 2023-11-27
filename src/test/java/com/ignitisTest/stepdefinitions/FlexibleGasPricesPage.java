@@ -1,5 +1,5 @@
 package com.ignitisTest.stepdefinitions;
-import com.ignitisTest.stepdefinitions.utils.TestUtils;
+import com.ignitisTest.stepdefinitions.utils.Scrolling;
 import org.openqa.selenium.*;
 import java.util.Optional;
 public class FlexibleGasPricesPage {
@@ -9,7 +9,7 @@ public class FlexibleGasPricesPage {
     }
     public void clickGetAnOfferButton(String buttonName) {
         String buttonXpath = "//a[text()='" + buttonName + "']";
-        Optional<WebElement> buttonElement = TestUtils.findElementInPage(driver, buttonXpath);
+        Optional<WebElement> buttonElement = Scrolling.findElementInPage(driver, buttonXpath);
         buttonElement.ifPresent(WebElement::click);
     }
 }
