@@ -11,7 +11,7 @@ public class StepDefinitions {
     private final FlexibleGasPricesPage flexibleGasPricesPage;
     private final OfferPage offerPage;
     public StepDefinitions() {
-        System.setProperty("webdriver.chrome.driver", "/Users/olia/IdeaProjects/IgnitisTest/chromedriver/chromedriver"); // Replace with your ChromeDriver path
+        System.setProperty("webdriver.chrome.driver", "/Users/olia/IdeaProjects/IgnitisTest/chromedriver/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         mainPage = new MainPage(driver);

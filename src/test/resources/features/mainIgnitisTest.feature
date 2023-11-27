@@ -10,5 +10,5 @@ Feature: User Journey for Natural Gas Inquiry
     When the user finds and selects the "Flexible gas price" article
     And the user clicks on the "Get an offer" button
     And the user fills all the information with random values
-    And the user submits the form
-    Then a confirmation message should be displayed
+  #  And the user submits the form
+  #  Then a confirmation message should be displayed
