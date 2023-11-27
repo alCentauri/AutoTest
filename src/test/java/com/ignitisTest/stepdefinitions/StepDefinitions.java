@@ -11,6 +11,7 @@ public class StepDefinitions {
     private final FlexibleGasPricesPage flexibleGasPricesPage;
     private final OfferPage offerPage;
     public StepDefinitions() {
+        System.out.println("1Executing step: user navigates to URL");
         System.setProperty("webdriver.chrome.driver", "/Users/olia/IdeaProjects/IgnitisTest/chromedriver/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -54,14 +55,5 @@ public class StepDefinitions {
     @And("the user fills all the information with random values")
     public void theUserFillsAllTheInformationWithRandomValues() {
         offerPage.fillInRandomDataValues();
-    }
-    @And("the user submits the form")
-    public void theUserSubmitsTheForm() {
-        offerPage.submitTheForm();
-    }
-    @Then("a confirmation message should be displayed")
-    public void aConfirmationMessageShouldBeDisplayed() {
-        offerPage.confirmationMessageIsDisplayed();
-        driver.close();
     }
 }

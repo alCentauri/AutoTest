@@ -11,7 +11,6 @@ public class XpathConstants {
     public static final String REPRESENTATIVE_EMAIL_INPUT = "//input[@aria-label='representative_email']";
     public static final String GDPR_CHECK_BOX = "//label[input[@type='checkbox' and @name='gdpr[]']]/span";
     public static final String OFFERS_CHECK_BOX = "//label[input[@type='checkbox' and not(@name)]]/span";
-    public static final String SUBMIT_THE_INQUIRY_BUTTON = "//button[@type='submit']";
     public static final String ALLOW_COOKIES_BUTTON = "//*[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection']";
     public static final String THE_MAIN_PAGE_LOGO = "//img[@src='/themes/custom/ignitis/logo.svg']";
     public static final String LANGUAGE_CHANGE_BUTTON = "//span[text()[normalize-space()='lt']]";
