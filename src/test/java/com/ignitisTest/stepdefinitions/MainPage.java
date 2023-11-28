@@ -14,7 +14,7 @@ public class MainPage {
         driver.findElement(By.xpath(XpathConstants.LANGUAGE_CHANGE_BUTTON)).click();
         driver.findElement(By.xpath("//li[normalize-space(text())='" + toLanguage + "']")).click();
     }
-    public void confirmHomepageLoaded() {
+    public void confirmHomepageWasLoaded() {
         adButton = driver.findElement(By.xpath(XpathConstants.ALLOW_COOKIES_BUTTON));
         logoMain = driver.findElement(By.xpath(XpathConstants.THE_MAIN_PAGE_LOGO));
         adButton.click();

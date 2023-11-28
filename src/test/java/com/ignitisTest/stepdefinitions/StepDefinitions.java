@@ -26,7 +26,7 @@ public class StepDefinitions {
     }
     @Then("the Ignitis homepage should be displayed")
     public void the_ignitis_homepage_should_be_displayed() {
-        mainPage.confirmHomepageLoaded();
+        mainPage.confirmHomepageWasLoaded();
     }
     @When("the user changes the language to {string}")
     public void theUserChangesTheLanguageTo(String toLanguage) {
